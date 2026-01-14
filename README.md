@@ -28,25 +28,6 @@ Outputs the recommended number of **coloured sources** required for a selected *
 
 Tip: This is pure HTML/CSS/JS—no build step.
 
-## Getting started
-
-### Option A — Run locally
-1. Clone the repo:
-   ```bash
-   git clone <YOUR_REPO_URL>
-   cd <YOUR_REPO_FOLDER>
-   ```
-2. Open `index.html` in your browser (double-click, or drag into a browser tab).
-
-### Option B — GitHub Pages
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**:
-   - Source: **Deploy from a branch**
-   - Branch: `main` (or your default branch)
-   - Folder: `/ (root)`
-4. Save. Your site will appear at the GitHub Pages URL.
-
 ## How to use
 
 ### Deck Land Calculator
@@ -86,29 +67,3 @@ All credit for the underlying analysis and recommendations belongs to the origin
 - These are **heuristics**, not simulations. Unusual deck mechanics (extreme cantrip density, free spells, heavy tutoring, atypical mulligan decisions, etc.) can shift optimal counts.
 - The colour-source calculator currently uses a **lookup table** keyed by (deck size × mana cost pattern). It assumes the consistency target described in the source article and does not model your specific spell distribution.
 - The current HTML includes some duplicated mana-cost options (e.g., `3CC` appears more than once). If you extend this tool, consider deduplicating the dropdown options.
-
-## Roadmap (optional)
-
-- Add “advanced mode” inputs:
-  - explicit mulligan model choice / assumptions
-  - separate “cheap draw” vs “cheap ramp”
-  - optional fetchable duals / tapped-land penalty adjustments
-- Add a mana-base builder:
-  - given target sources per colour, propose a land suite under constraints (budget, format legality, number of utility lands, etc.)
-- Add tests + CI for the JS functions (to prevent table/formula regressions).
-
-## Contributing
-
-PRs are welcome, especially for:
-- UI cleanup
-- improving input validation (e.g., non-negative integers for counts)
-- refactoring the cost-pattern dropdown to avoid duplicates
-- adding documentation/examples for common archetypes
-
-## License
-
-Choose one:
-- MIT (simple + common for small tools), or
-- GPL/AGPL if you want downstream changes to stay open.
-
-(If you already picked a license, replace this section with the actual license text and include a `LICENSE` file.)
