@@ -1,4 +1,5 @@
 # MTG ManaBase Calculator
+[Link to the Calculator](https://alejandrofuentepinero.github.io/mtg-mana-calculator/)
 
 A lightweight, browser-based tool that implements Frank Karsten–style heuristics for:
 1) estimating **recommended land count** for a deck, and  
